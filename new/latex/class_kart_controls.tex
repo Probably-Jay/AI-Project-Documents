@@ -1,0 +1,121 @@
+\hypertarget{class_kart_controls}{}\doxysection{Kart\+Controls Class Reference}
+\label{class_kart_controls}\index{KartControls@{KartControls}}
+
+
+Class that inherits from Kart\+Game.\+Kart\+Systems.\+Base\+Input, used by Unity\textquotesingle{}s kart to drive the kart by overriding Kart\+Game.\+Kart\+Systems.\+Base\+Input.\+Generate\+Input  
+
+
+Inheritance diagram for Kart\+Controls\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_kart_controls}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94}{Control\+Mode}} \{ \mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94a6ce4d85a628a88bbdb3ac24a8e5a9c2e}{Keyboard}}
+, \mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94a2840fec0f5af9432dd0084c3c4968f93}{Fuzzy}}
+, \mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94ab861674efdf20a3e54ae20e754d58de7}{Rule\+Based\+System}}
+ \}
+\begin{DoxyCompactList}\small\item\em The mode the \mbox{\hyperlink{class_kart_controls}{Kart\+Controls}} is currently using to control the kart \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override Vector2 \mbox{\hyperlink{class_kart_controls_ab3e5ad42d39a426e6049931b595ebced}{Generate\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Generates the input for the kart to use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_kart_controls_aef9271689145795092b8d9b417dcb835}{Horizontal}} = \char`\"{}Horizontal\char`\"{}
+\begin{DoxyCompactList}\small\item\em The name of the horizontal axis used in \mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94a6ce4d85a628a88bbdb3ac24a8e5a9c2e}{Kart\+Controls.\+Control\+Mode.\+Keyboard}} control mode \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_kart_controls_a4a075e0b86c7c78b370a469de667159f}{Vertical}} = \char`\"{}Vertical\char`\"{}
+\begin{DoxyCompactList}\small\item\em The name of the vertical axis used in \mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94a6ce4d85a628a88bbdb3ac24a8e5a9c2e}{Kart\+Controls.\+Control\+Mode.\+Keyboard}} control mode \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94}{Control\+Mode}} \mbox{\hyperlink{class_kart_controls_ab5a87c4c4da0d9ac54350a2589b07f54}{control\+Mode}}
+\begin{DoxyCompactList}\small\item\em The current \mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94}{Kart\+Controls.\+Control\+Mode}} of the kart \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that inherits from Kart\+Game.\+Kart\+Systems.\+Base\+Input, used by Unity\textquotesingle{}s kart to drive the kart by overriding Kart\+Game.\+Kart\+Systems.\+Base\+Input.\+Generate\+Input 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94}\label{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94}} 
+\index{KartControls@{KartControls}!ControlMode@{ControlMode}}
+\index{ControlMode@{ControlMode}!KartControls@{KartControls}}
+\doxysubsubsection{\texorpdfstring{ControlMode}{ControlMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94}{Kart\+Controls.\+Control\+Mode}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The mode the \mbox{\hyperlink{class_kart_controls}{Kart\+Controls}} is currently using to control the kart 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Keyboard@{Keyboard}!KartControls@{KartControls}}\index{KartControls@{KartControls}!Keyboard@{Keyboard}}}\mbox{\Hypertarget{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94a6ce4d85a628a88bbdb3ac24a8e5a9c2e}\label{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94a6ce4d85a628a88bbdb3ac24a8e5a9c2e}} 
+Keyboard&input driven by human user with keyboard \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fuzzy@{Fuzzy}!KartControls@{KartControls}}\index{KartControls@{KartControls}!Fuzzy@{Fuzzy}}}\mbox{\Hypertarget{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94a2840fec0f5af9432dd0084c3c4968f93}\label{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94a2840fec0f5af9432dd0084c3c4968f93}} 
+Fuzzy&input driven by the \mbox{\hyperlink{namespace_fuzzy_logic}{Fuzzy\+Logic}} system \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RuleBasedSystem@{RuleBasedSystem}!KartControls@{KartControls}}\index{KartControls@{KartControls}!RuleBasedSystem@{RuleBasedSystem}}}\mbox{\Hypertarget{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94ab861674efdf20a3e54ae20e754d58de7}\label{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94ab861674efdf20a3e54ae20e754d58de7}} 
+Rule\+Based\+System&input driven by the RBSCart\+Controller rules based system \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_kart_controls_ab3e5ad42d39a426e6049931b595ebced}\label{class_kart_controls_ab3e5ad42d39a426e6049931b595ebced}} 
+\index{KartControls@{KartControls}!GenerateInput@{GenerateInput}}
+\index{GenerateInput@{GenerateInput}!KartControls@{KartControls}}
+\doxysubsubsection{\texorpdfstring{GenerateInput()}{GenerateInput()}}
+{\footnotesize\ttfamily override Vector2 Kart\+Controls.\+Generate\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates the input for the kart to use. 
+
+\begin{DoxyReturn}{Returns}
+A Unity\+Engine.\+Vector2 in the form {\ttfamily Vector2(Left/\+Right,Forward/\+Backwards)}
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_kart_controls_ab5a87c4c4da0d9ac54350a2589b07f54}\label{class_kart_controls_ab5a87c4c4da0d9ac54350a2589b07f54}} 
+\index{KartControls@{KartControls}!controlMode@{controlMode}}
+\index{controlMode@{controlMode}!KartControls@{KartControls}}
+\doxysubsubsection{\texorpdfstring{controlMode}{controlMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94}{Control\+Mode}} Kart\+Controls.\+control\+Mode}
+
+
+
+The current \mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94}{Kart\+Controls.\+Control\+Mode}} of the kart 
+
+\mbox{\Hypertarget{class_kart_controls_aef9271689145795092b8d9b417dcb835}\label{class_kart_controls_aef9271689145795092b8d9b417dcb835}} 
+\index{KartControls@{KartControls}!Horizontal@{Horizontal}}
+\index{Horizontal@{Horizontal}!KartControls@{KartControls}}
+\doxysubsubsection{\texorpdfstring{Horizontal}{Horizontal}}
+{\footnotesize\ttfamily string Kart\+Controls.\+Horizontal = \char`\"{}Horizontal\char`\"{}}
+
+
+
+The name of the horizontal axis used in \mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94a6ce4d85a628a88bbdb3ac24a8e5a9c2e}{Kart\+Controls.\+Control\+Mode.\+Keyboard}} control mode 
+
+\mbox{\Hypertarget{class_kart_controls_a4a075e0b86c7c78b370a469de667159f}\label{class_kart_controls_a4a075e0b86c7c78b370a469de667159f}} 
+\index{KartControls@{KartControls}!Vertical@{Vertical}}
+\index{Vertical@{Vertical}!KartControls@{KartControls}}
+\doxysubsubsection{\texorpdfstring{Vertical}{Vertical}}
+{\footnotesize\ttfamily string Kart\+Controls.\+Vertical = \char`\"{}Vertical\char`\"{}}
+
+
+
+The name of the vertical axis used in \mbox{\hyperlink{class_kart_controls_aa18c7b5469dc1e6ea5a1fa75b9031a94a6ce4d85a628a88bbdb3ac24a8e5a9c2e}{Kart\+Controls.\+Control\+Mode.\+Keyboard}} control mode 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fuzzy AI project/\+Assets/\+Code/\+Project\+\_\+\+Code/\mbox{\hyperlink{_kart_controls_8cs}{Kart\+Controls.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,179 @@
+\hypertarget{class_kart_sensor}{}\doxysection{Kart\+Sensor Class Reference}
+\label{class_kart_sensor}\index{KartSensor@{KartSensor}}
+
+
+Sensor system so the kart can know its state in the environment  
+
+
+Inheritance diagram for Kart\+Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_kart_sensor}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{class_kart_sensor_af076b07d4b2f69c2a64a0516d3bbd6ce}{high\+Speed}} = 10
+\begin{DoxyCompactList}\small\item\em The maximum speed of the cart \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Rigidbody \mbox{\hyperlink{class_kart_sensor_a3b7010e8522f5f120926f0dda55d5843}{rb}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Kart\textquotesingle{}s Unity\+Engine.\+Rigidbody used to control physics \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_kart_sensor_a297821466e0801b9caf285237f305cc4}{Kart\+Forward}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Forward vector of the car \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_kart_sensor_a1b84204b3f6b427f7479667e347c7d74}{Kart\+Right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Right vector of the car \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_kart_sensor_ab62fc72d2036aa632fe532b3e09cd2a2}{Kart\+Left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Left vector of the car \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_kart_sensor_ad1c6587c4b4c7b7354928098150e10db}{Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current speed of the car \end{DoxyCompactList}\item 
+float? \mbox{\hyperlink{class_kart_sensor_ae2fe73f8545c623cb905ac4c00c103b4}{Forward\+Ray\+Hit\+Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The distance to the wall hit by the forward ray. Returns {\ttfamily null} if nothing is hit \end{DoxyCompactList}\item 
+Vector3? \mbox{\hyperlink{class_kart_sensor_af76864c57930ba625e5c9cff5b36ea5a}{Forward\+Ray\+Collision\+Normal}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The surface normal of the wall hit by the forward ray. Returns {\ttfamily null} if nothing was hit \end{DoxyCompactList}\item 
+float? \mbox{\hyperlink{class_kart_sensor_a60bc08102228465657fc66d37e8ebae0}{Right\+Ray\+Hit\+Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The distance to the wall hit by the right ray. Returns {\ttfamily null} if nothing is hit \end{DoxyCompactList}\item 
+Vector3? \mbox{\hyperlink{class_kart_sensor_ace9244f44f1d43358d871d20f5c91239}{Right\+Ray\+Collision\+Normal}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The surface normal of the wall hit by the right ray. Returns {\ttfamily null} if nothing was hit \end{DoxyCompactList}\item 
+float? \mbox{\hyperlink{class_kart_sensor_a4000ab097fd81ccebd8b89b641293bc0}{Left\+Ray\+Hit\+Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The distance to the wall hit by the left ray. Returns {\ttfamily null} if nothing is hit \end{DoxyCompactList}\item 
+Vector3? \mbox{\hyperlink{class_kart_sensor_ad3bbe0303d0a985d0691e265e955a9f5}{Left\+Ray\+Collision\+Normal}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The surface normal of the wall hit by the left ray. Returns {\ttfamily null} if nothing was hit \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sensor system so the kart can know its state in the environment 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_kart_sensor_af076b07d4b2f69c2a64a0516d3bbd6ce}\label{class_kart_sensor_af076b07d4b2f69c2a64a0516d3bbd6ce}} 
+\index{KartSensor@{KartSensor}!highSpeed@{highSpeed}}
+\index{highSpeed@{highSpeed}!KartSensor@{KartSensor}}
+\doxysubsubsection{\texorpdfstring{highSpeed}{highSpeed}}
+{\footnotesize\ttfamily const float Kart\+Sensor.\+high\+Speed = 10\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The maximum speed of the cart 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_kart_sensor_af76864c57930ba625e5c9cff5b36ea5a}\label{class_kart_sensor_af76864c57930ba625e5c9cff5b36ea5a}} 
+\index{KartSensor@{KartSensor}!ForwardRayCollisionNormal@{ForwardRayCollisionNormal}}
+\index{ForwardRayCollisionNormal@{ForwardRayCollisionNormal}!KartSensor@{KartSensor}}
+\doxysubsubsection{\texorpdfstring{ForwardRayCollisionNormal}{ForwardRayCollisionNormal}}
+{\footnotesize\ttfamily Vector3? Kart\+Sensor.\+Forward\+Ray\+Collision\+Normal\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The surface normal of the wall hit by the forward ray. Returns {\ttfamily null} if nothing was hit 
+
+\mbox{\Hypertarget{class_kart_sensor_ae2fe73f8545c623cb905ac4c00c103b4}\label{class_kart_sensor_ae2fe73f8545c623cb905ac4c00c103b4}} 
+\index{KartSensor@{KartSensor}!ForwardRayHitDistance@{ForwardRayHitDistance}}
+\index{ForwardRayHitDistance@{ForwardRayHitDistance}!KartSensor@{KartSensor}}
+\doxysubsubsection{\texorpdfstring{ForwardRayHitDistance}{ForwardRayHitDistance}}
+{\footnotesize\ttfamily float? Kart\+Sensor.\+Forward\+Ray\+Hit\+Distance\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The distance to the wall hit by the forward ray. Returns {\ttfamily null} if nothing is hit 
+
+\mbox{\Hypertarget{class_kart_sensor_a297821466e0801b9caf285237f305cc4}\label{class_kart_sensor_a297821466e0801b9caf285237f305cc4}} 
+\index{KartSensor@{KartSensor}!KartForward@{KartForward}}
+\index{KartForward@{KartForward}!KartSensor@{KartSensor}}
+\doxysubsubsection{\texorpdfstring{KartForward}{KartForward}}
+{\footnotesize\ttfamily Vector3 Kart\+Sensor.\+Kart\+Forward\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Forward vector of the car 
+
+\mbox{\Hypertarget{class_kart_sensor_ab62fc72d2036aa632fe532b3e09cd2a2}\label{class_kart_sensor_ab62fc72d2036aa632fe532b3e09cd2a2}} 
+\index{KartSensor@{KartSensor}!KartLeft@{KartLeft}}
+\index{KartLeft@{KartLeft}!KartSensor@{KartSensor}}
+\doxysubsubsection{\texorpdfstring{KartLeft}{KartLeft}}
+{\footnotesize\ttfamily Vector3 Kart\+Sensor.\+Kart\+Left\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Left vector of the car 
+
+\mbox{\Hypertarget{class_kart_sensor_a1b84204b3f6b427f7479667e347c7d74}\label{class_kart_sensor_a1b84204b3f6b427f7479667e347c7d74}} 
+\index{KartSensor@{KartSensor}!KartRight@{KartRight}}
+\index{KartRight@{KartRight}!KartSensor@{KartSensor}}
+\doxysubsubsection{\texorpdfstring{KartRight}{KartRight}}
+{\footnotesize\ttfamily Vector3 Kart\+Sensor.\+Kart\+Right\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Right vector of the car 
+
+\mbox{\Hypertarget{class_kart_sensor_ad3bbe0303d0a985d0691e265e955a9f5}\label{class_kart_sensor_ad3bbe0303d0a985d0691e265e955a9f5}} 
+\index{KartSensor@{KartSensor}!LeftRayCollisionNormal@{LeftRayCollisionNormal}}
+\index{LeftRayCollisionNormal@{LeftRayCollisionNormal}!KartSensor@{KartSensor}}
+\doxysubsubsection{\texorpdfstring{LeftRayCollisionNormal}{LeftRayCollisionNormal}}
+{\footnotesize\ttfamily Vector3? Kart\+Sensor.\+Left\+Ray\+Collision\+Normal\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The surface normal of the wall hit by the left ray. Returns {\ttfamily null} if nothing was hit 
+
+\mbox{\Hypertarget{class_kart_sensor_a4000ab097fd81ccebd8b89b641293bc0}\label{class_kart_sensor_a4000ab097fd81ccebd8b89b641293bc0}} 
+\index{KartSensor@{KartSensor}!LeftRayHitDistance@{LeftRayHitDistance}}
+\index{LeftRayHitDistance@{LeftRayHitDistance}!KartSensor@{KartSensor}}
+\doxysubsubsection{\texorpdfstring{LeftRayHitDistance}{LeftRayHitDistance}}
+{\footnotesize\ttfamily float? Kart\+Sensor.\+Left\+Ray\+Hit\+Distance\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The distance to the wall hit by the left ray. Returns {\ttfamily null} if nothing is hit 
+
+\mbox{\Hypertarget{class_kart_sensor_a3b7010e8522f5f120926f0dda55d5843}\label{class_kart_sensor_a3b7010e8522f5f120926f0dda55d5843}} 
+\index{KartSensor@{KartSensor}!rb@{rb}}
+\index{rb@{rb}!KartSensor@{KartSensor}}
+\doxysubsubsection{\texorpdfstring{rb}{rb}}
+{\footnotesize\ttfamily Rigidbody Kart\+Sensor.\+rb\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Kart\textquotesingle{}s Unity\+Engine.\+Rigidbody used to control physics 
+
+\mbox{\Hypertarget{class_kart_sensor_ace9244f44f1d43358d871d20f5c91239}\label{class_kart_sensor_ace9244f44f1d43358d871d20f5c91239}} 
+\index{KartSensor@{KartSensor}!RightRayCollisionNormal@{RightRayCollisionNormal}}
+\index{RightRayCollisionNormal@{RightRayCollisionNormal}!KartSensor@{KartSensor}}
+\doxysubsubsection{\texorpdfstring{RightRayCollisionNormal}{RightRayCollisionNormal}}
+{\footnotesize\ttfamily Vector3? Kart\+Sensor.\+Right\+Ray\+Collision\+Normal\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The surface normal of the wall hit by the right ray. Returns {\ttfamily null} if nothing was hit 
+
+\mbox{\Hypertarget{class_kart_sensor_a60bc08102228465657fc66d37e8ebae0}\label{class_kart_sensor_a60bc08102228465657fc66d37e8ebae0}} 
+\index{KartSensor@{KartSensor}!RightRayHitDistance@{RightRayHitDistance}}
+\index{RightRayHitDistance@{RightRayHitDistance}!KartSensor@{KartSensor}}
+\doxysubsubsection{\texorpdfstring{RightRayHitDistance}{RightRayHitDistance}}
+{\footnotesize\ttfamily float? Kart\+Sensor.\+Right\+Ray\+Hit\+Distance\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The distance to the wall hit by the right ray. Returns {\ttfamily null} if nothing is hit 
+
+\mbox{\Hypertarget{class_kart_sensor_ad1c6587c4b4c7b7354928098150e10db}\label{class_kart_sensor_ad1c6587c4b4c7b7354928098150e10db}} 
+\index{KartSensor@{KartSensor}!Speed@{Speed}}
+\index{Speed@{Speed}!KartSensor@{KartSensor}}
+\doxysubsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily float Kart\+Sensor.\+Speed\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The current speed of the car 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fuzzy AI project/\+Assets/\+Code/\+Project\+\_\+\+Code/\mbox{\hyperlink{_kart_sensor_8cs}{Kart\+Sensor.\+cs}}\end{DoxyCompactItemize}

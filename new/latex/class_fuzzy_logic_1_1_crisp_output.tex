@@ -1,0 +1,147 @@
+\hypertarget{class_fuzzy_logic_1_1_crisp_output}{}\doxysection{Fuzzy\+Logic.\+Crisp\+Output Class Reference}
+\label{class_fuzzy_logic_1_1_crisp_output}\index{FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}}
+
+
+Outputs to the fuzzy system  
+
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5ec}{Outputs}} \{ \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5eca497f1cbcb72f5d665b9a8977252c3bbb}{Forward\+Backwards}}
+, \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5eca955322c98b1fc571e8b6b688ae7d9ee4}{Left\+Right}}
+ \}
+\begin{DoxyCompactList}\small\item\em An enum representing the output variables of the system \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_a82e7f8451b57bc6c942bd25afaf3aade}{Output\+Valid}} (\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5ec}{Outputs}} variable)
+\begin{DoxyCompactList}\small\item\em If \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_af648ad47e32dd23072546cf593f6cd08}{Fuzzy\+Logic.\+Fuzzy\+System.\+Evaluate\+Fuzzy\+Logic(\+Crisp\+Input)}} does not have any rules that correspond to it\textquotesingle{}s input, it will return a value representing \char`\"{}\+Take no action\char`\"{}. Use this function to test for that \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_afc9bf135fb01bc0e2088cf7da1631c17}{Number\+Of\+Variables}} = 2
+\begin{DoxyCompactList}\small\item\em The number of output variables in the system \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_aef9ed155d7edc1221433a75033671b5b}{Crisp\+Output}} ()
+\item 
+\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_acb273a6eb756aeadb5ee8050bd356d52}{Crisp\+Output}} (float\mbox{[}$\,$\mbox{]} new\+Values)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_a1b021e3817f204ec4153e617a62bc1fa}{this\mbox{[}\+Outputs Input\+Variable\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_af36b8d045a39619c79299439eb35e0dd}{this\mbox{[}int Input\+Variable\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5ec}{Outputs}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_aa7fb695c4f0daf6504ae0adc2247cd78}{Output\+Enumvalues}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em For use in {\ttfamily foreach} statements, get a list of each \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5ec}{Fuzzy\+Logic.\+Crisp\+Output.\+Outputs}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Outputs to the fuzzy system 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5ec}\label{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5ec}} 
+\index{FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}!Outputs@{Outputs}}
+\index{Outputs@{Outputs}!FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}}
+\doxysubsubsection{\texorpdfstring{Outputs}{Outputs}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5ec}{Fuzzy\+Logic.\+Crisp\+Output.\+Outputs}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+An enum representing the output variables of the system 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ForwardBackwards@{ForwardBackwards}!FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}}\index{FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}!ForwardBackwards@{ForwardBackwards}}}\mbox{\Hypertarget{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5eca497f1cbcb72f5d665b9a8977252c3bbb}\label{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5eca497f1cbcb72f5d665b9a8977252c3bbb}} 
+Forward\+Backwards&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftRight@{LeftRight}!FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}}\index{FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}!LeftRight@{LeftRight}}}\mbox{\Hypertarget{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5eca955322c98b1fc571e8b6b688ae7d9ee4}\label{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5eca955322c98b1fc571e8b6b688ae7d9ee4}} 
+Left\+Right&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_crisp_output_aef9ed155d7edc1221433a75033671b5b}\label{class_fuzzy_logic_1_1_crisp_output_aef9ed155d7edc1221433a75033671b5b}} 
+\index{FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}!CrispOutput@{CrispOutput}}
+\index{CrispOutput@{CrispOutput}!FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}}
+\doxysubsubsection{\texorpdfstring{CrispOutput()}{CrispOutput()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fuzzy\+Logic.\+Crisp\+Output.\+Crisp\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_crisp_output_acb273a6eb756aeadb5ee8050bd356d52}\label{class_fuzzy_logic_1_1_crisp_output_acb273a6eb756aeadb5ee8050bd356d52}} 
+\index{FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}!CrispOutput@{CrispOutput}}
+\index{CrispOutput@{CrispOutput}!FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}}
+\doxysubsubsection{\texorpdfstring{CrispOutput()}{CrispOutput()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fuzzy\+Logic.\+Crisp\+Output.\+Crisp\+Output (\begin{DoxyParamCaption}\item[{float\mbox{[}$\,$\mbox{]}}]{new\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_crisp_output_a82e7f8451b57bc6c942bd25afaf3aade}\label{class_fuzzy_logic_1_1_crisp_output_a82e7f8451b57bc6c942bd25afaf3aade}} 
+\index{FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}!OutputValid@{OutputValid}}
+\index{OutputValid@{OutputValid}!FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}}
+\doxysubsubsection{\texorpdfstring{OutputValid()}{OutputValid()}}
+{\footnotesize\ttfamily bool Fuzzy\+Logic.\+Crisp\+Output.\+Output\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5ec}{Outputs}}}]{variable }\end{DoxyParamCaption})}
+
+
+
+If \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_af648ad47e32dd23072546cf593f6cd08}{Fuzzy\+Logic.\+Fuzzy\+System.\+Evaluate\+Fuzzy\+Logic(\+Crisp\+Input)}} does not have any rules that correspond to it\textquotesingle{}s input, it will return a value representing \char`\"{}\+Take no action\char`\"{}. Use this function to test for that 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variable} & The variable in question\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If that variable represents an action that should be taken
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_crisp_output_afc9bf135fb01bc0e2088cf7da1631c17}\label{class_fuzzy_logic_1_1_crisp_output_afc9bf135fb01bc0e2088cf7da1631c17}} 
+\index{FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}!NumberOfVariables@{NumberOfVariables}}
+\index{NumberOfVariables@{NumberOfVariables}!FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}}
+\doxysubsubsection{\texorpdfstring{NumberOfVariables}{NumberOfVariables}}
+{\footnotesize\ttfamily const int Fuzzy\+Logic.\+Crisp\+Output.\+Number\+Of\+Variables = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The number of output variables in the system 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_crisp_output_aa7fb695c4f0daf6504ae0adc2247cd78}\label{class_fuzzy_logic_1_1_crisp_output_aa7fb695c4f0daf6504ae0adc2247cd78}} 
+\index{FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}!OutputEnumvalues@{OutputEnumvalues}}
+\index{OutputEnumvalues@{OutputEnumvalues}!FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}}
+\doxysubsubsection{\texorpdfstring{OutputEnumvalues}{OutputEnumvalues}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5ec}{Outputs}} \mbox{[}$\,$\mbox{]} Fuzzy\+Logic.\+Crisp\+Output.\+Output\+Enumvalues\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+For use in {\ttfamily foreach} statements, get a list of each \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5ec}{Fuzzy\+Logic.\+Crisp\+Output.\+Outputs}} 
+
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_crisp_output_af36b8d045a39619c79299439eb35e0dd}\label{class_fuzzy_logic_1_1_crisp_output_af36b8d045a39619c79299439eb35e0dd}} 
+\index{FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}!this\mbox{[}int InputVariable\mbox{]}@{this[int InputVariable]}}
+\index{this\mbox{[}int InputVariable\mbox{]}@{this[int InputVariable]}!FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}}
+\doxysubsubsection{\texorpdfstring{this[int InputVariable]}{this[int InputVariable]}}
+{\footnotesize\ttfamily float Fuzzy\+Logic.\+Crisp\+Output.\+this\mbox{[}int Input\+Variable\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_crisp_output_a1b021e3817f204ec4153e617a62bc1fa}\label{class_fuzzy_logic_1_1_crisp_output_a1b021e3817f204ec4153e617a62bc1fa}} 
+\index{FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}!this\mbox{[}Outputs InputVariable\mbox{]}@{this[Outputs InputVariable]}}
+\index{this\mbox{[}Outputs InputVariable\mbox{]}@{this[Outputs InputVariable]}!FuzzyLogic.CrispOutput@{FuzzyLogic.CrispOutput}}
+\doxysubsubsection{\texorpdfstring{this[Outputs InputVariable]}{this[Outputs InputVariable]}}
+{\footnotesize\ttfamily float Fuzzy\+Logic.\+Crisp\+Output.\+this\mbox{[}\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output_ac735994c3236f01ef2c28c1162cce5ec}{Outputs}} Input\+Variable\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fuzzy AI project/\+Assets/\+Code/\+Fuzzy/\+Input\+\_\+\+Output/\mbox{\hyperlink{_crisp_input_8cs}{Crisp\+Input.\+cs}}\end{DoxyCompactItemize}

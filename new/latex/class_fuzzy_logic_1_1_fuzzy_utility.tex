@@ -1,0 +1,190 @@
+\hypertarget{class_fuzzy_logic_1_1_fuzzy_utility}{}\doxysection{Fuzzy\+Logic.\+Fuzzy\+Utility Class Reference}
+\label{class_fuzzy_logic_1_1_fuzzy_utility}\index{FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}}
+
+
+Utility class for use by the \mbox{\hyperlink{namespace_fuzzy_logic}{Fuzzy\+Logic}} system  
+
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82f}{Fuzzy\+States}} \{ \newline
+\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fafaccf5fbece5d95182fae0726ddadd4b}{LN}}
+, \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fa943afaf25ac17fe7bc39fdaae916e3a4}{MN}}
+, \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fa21c2e59531c8710156d34a3c30ac81d5}{Z}}
+, \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fac90a918b859bd1e56cf99af6246b128e}{MP}}
+, \newline
+\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fa233724c5adf28da47784390134db3c66}{LP}}
+ \}
+\begin{DoxyCompactList}\small\item\em Each state a fuzzy number can be in \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a91aad6b75289565b7746605e75f9e2fd}{Normalise\+Value}} (float value\+Min, float value\+Max, float value)
+\begin{DoxyCompactList}\small\item\em Clamped normalises {\itshape value}  to a {\ttfamily \mbox{[}-\/1,1\mbox{]}} scale based on the scale between {\ttfamily \mbox{[}}{\itshape value\+Min} {\ttfamily ,}{\itshape value\+Max} {\ttfamily \mbox{]}} \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_ad76ecdcebe1679deed10af047b8b7701}{Normalise\+Value\+Uneven}} (float value\+Min, float value\+Neutral, float value\+Max, float value)
+\begin{DoxyCompactList}\small\item\em Clamped normalises {\itshape value}  to a {\ttfamily \mbox{[}-\/1,1\mbox{]}} scale based on the uneven scale between {\ttfamily \mbox{[}}{\itshape value\+Min} {\ttfamily ,}{\itshape value\+Max} {\ttfamily \mbox{]}}, where {\itshape value\+Neutral}  represents a neutral state \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a51b5d09a1ab28260c1e0a8741f16b5ec}{Un\+Normalise\+Value}} (float value\+Min, float value\+Max, float n\+Value)
+\begin{DoxyCompactList}\small\item\em Returns a value that was normalised to {\ttfamily \mbox{[}-\/1,1\mbox{]}} to again be between the clamped range {\ttfamily \mbox{[}}{\itshape value\+Min} {\ttfamily ,}{\itshape value\+Max} {\ttfamily \mbox{]}} \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a202cb8be18819d525d18d144deb03b40}{Un\+Normalise\+Value\+Uneven}} (float value\+Min, float value\+Neutral, float value\+Max, float n\+Value)
+\begin{DoxyCompactList}\small\item\em Returns a value that was normalised unevenly to {\ttfamily \mbox{[}-\/1,1\mbox{]}} to again be between the clamped range {\ttfamily \mbox{[}}{\itshape value\+Min} {\ttfamily ,}{\itshape value\+Max} {\ttfamily \mbox{]}} where {\itshape value\+Neutral}  represents a neutral state \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_ac4fb9440f1ffeba7e606f0bcd3d59cea}{Valid\+Instruction}} (float value)
+\begin{DoxyCompactList}\small\item\em If the fuzzy logic does not know what to do with an input (it has no rules relating to the provided argument) it will produce an invalid instruction, use this function to test for that \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class for use by the \mbox{\hyperlink{namespace_fuzzy_logic}{Fuzzy\+Logic}} system 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82f}\label{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82f}} 
+\index{FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}!FuzzyStates@{FuzzyStates}}
+\index{FuzzyStates@{FuzzyStates}!FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}}
+\doxysubsubsection{\texorpdfstring{FuzzyStates}{FuzzyStates}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82f}{Fuzzy\+Logic.\+Fuzzy\+Utility.\+Fuzzy\+States}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Each state a fuzzy number can be in 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LN@{LN}!FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}}\index{FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}!LN@{LN}}}\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fafaccf5fbece5d95182fae0726ddadd4b}\label{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fafaccf5fbece5d95182fae0726ddadd4b}} 
+LN&Large negative value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MN@{MN}!FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}}\index{FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}!MN@{MN}}}\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fa943afaf25ac17fe7bc39fdaae916e3a4}\label{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fa943afaf25ac17fe7bc39fdaae916e3a4}} 
+MN&Medium negative value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Z@{Z}!FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}}\index{FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}!Z@{Z}}}\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fa21c2e59531c8710156d34a3c30ac81d5}\label{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fa21c2e59531c8710156d34a3c30ac81d5}} 
+Z&Value close to zero. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MP@{MP}!FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}}\index{FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}!MP@{MP}}}\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fac90a918b859bd1e56cf99af6246b128e}\label{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fac90a918b859bd1e56cf99af6246b128e}} 
+MP&Medium positive value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LP@{LP}!FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}}\index{FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}!LP@{LP}}}\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fa233724c5adf28da47784390134db3c66}\label{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82fa233724c5adf28da47784390134db3c66}} 
+LP&large positive value \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_utility_a91aad6b75289565b7746605e75f9e2fd}\label{class_fuzzy_logic_1_1_fuzzy_utility_a91aad6b75289565b7746605e75f9e2fd}} 
+\index{FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}!NormaliseValue@{NormaliseValue}}
+\index{NormaliseValue@{NormaliseValue}!FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}}
+\doxysubsubsection{\texorpdfstring{NormaliseValue()}{NormaliseValue()}}
+{\footnotesize\ttfamily static float Fuzzy\+Logic.\+Fuzzy\+Utility.\+Normalise\+Value (\begin{DoxyParamCaption}\item[{float}]{value\+Min,  }\item[{float}]{value\+Max,  }\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clamped normalises {\itshape value}  to a {\ttfamily \mbox{[}-\/1,1\mbox{]}} scale based on the scale between {\ttfamily \mbox{[}}{\itshape value\+Min} {\ttfamily ,}{\itshape value\+Max} {\ttfamily \mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\+Min} & The minumum value this {\itshape value}  can be expeceted to have, will be mapped to {\ttfamily -\/1}\\
+\hline
+{\em value\+Max} & The maximum value this {\itshape value}  can be expeceted to have, will be mapped to {\ttfamily 1}\\
+\hline
+{\em value} & The value to be normalised\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Normalised represenation of {\itshape value}  within the range {\ttfamily \mbox{[}-\/1,1\mbox{]}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_utility_ad76ecdcebe1679deed10af047b8b7701}\label{class_fuzzy_logic_1_1_fuzzy_utility_ad76ecdcebe1679deed10af047b8b7701}} 
+\index{FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}!NormaliseValueUneven@{NormaliseValueUneven}}
+\index{NormaliseValueUneven@{NormaliseValueUneven}!FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}}
+\doxysubsubsection{\texorpdfstring{NormaliseValueUneven()}{NormaliseValueUneven()}}
+{\footnotesize\ttfamily static float Fuzzy\+Logic.\+Fuzzy\+Utility.\+Normalise\+Value\+Uneven (\begin{DoxyParamCaption}\item[{float}]{value\+Min,  }\item[{float}]{value\+Neutral,  }\item[{float}]{value\+Max,  }\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clamped normalises {\itshape value}  to a {\ttfamily \mbox{[}-\/1,1\mbox{]}} scale based on the uneven scale between {\ttfamily \mbox{[}}{\itshape value\+Min} {\ttfamily ,}{\itshape value\+Max} {\ttfamily \mbox{]}}, where {\itshape value\+Neutral}  represents a neutral state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\+Min} & The minumum value this {\itshape value}  can be expeceted to have, will be mapped to {\ttfamily -\/1}\\
+\hline
+{\em value\+Neutral} & The value representing a neutral state of {\itshape value} , will be mapped to {\ttfamily 0}\\
+\hline
+{\em value\+Max} & The maximum value this {\itshape value}  can be expeceted to have, will be mapped to {\ttfamily 1}\\
+\hline
+{\em value} & The value to be normalised\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Normalised represenation of {\itshape value}  within the range {\ttfamily \mbox{[}-\/1,1\mbox{]}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_utility_a51b5d09a1ab28260c1e0a8741f16b5ec}\label{class_fuzzy_logic_1_1_fuzzy_utility_a51b5d09a1ab28260c1e0a8741f16b5ec}} 
+\index{FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}!UnNormaliseValue@{UnNormaliseValue}}
+\index{UnNormaliseValue@{UnNormaliseValue}!FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}}
+\doxysubsubsection{\texorpdfstring{UnNormaliseValue()}{UnNormaliseValue()}}
+{\footnotesize\ttfamily static float Fuzzy\+Logic.\+Fuzzy\+Utility.\+Un\+Normalise\+Value (\begin{DoxyParamCaption}\item[{float}]{value\+Min,  }\item[{float}]{value\+Max,  }\item[{float}]{n\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a value that was normalised to {\ttfamily \mbox{[}-\/1,1\mbox{]}} to again be between the clamped range {\ttfamily \mbox{[}}{\itshape value\+Min} {\ttfamily ,}{\itshape value\+Max} {\ttfamily \mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\+Min} & The minumum value this function will return, will be mapped from {\ttfamily -\/1}\\
+\hline
+{\em value\+Max} & The maximum value this function will return, will be mapped from {\ttfamily 1}\\
+\hline
+{\em n\+Value} & The normalised value to be projected, valid over range {\ttfamily \mbox{[}-\/1,1\mbox{]}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un-\/\+Normalised value
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_utility_a202cb8be18819d525d18d144deb03b40}\label{class_fuzzy_logic_1_1_fuzzy_utility_a202cb8be18819d525d18d144deb03b40}} 
+\index{FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}!UnNormaliseValueUneven@{UnNormaliseValueUneven}}
+\index{UnNormaliseValueUneven@{UnNormaliseValueUneven}!FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}}
+\doxysubsubsection{\texorpdfstring{UnNormaliseValueUneven()}{UnNormaliseValueUneven()}}
+{\footnotesize\ttfamily static float Fuzzy\+Logic.\+Fuzzy\+Utility.\+Un\+Normalise\+Value\+Uneven (\begin{DoxyParamCaption}\item[{float}]{value\+Min,  }\item[{float}]{value\+Neutral,  }\item[{float}]{value\+Max,  }\item[{float}]{n\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a value that was normalised unevenly to {\ttfamily \mbox{[}-\/1,1\mbox{]}} to again be between the clamped range {\ttfamily \mbox{[}}{\itshape value\+Min} {\ttfamily ,}{\itshape value\+Max} {\ttfamily \mbox{]}} where {\itshape value\+Neutral}  represents a neutral state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\+Min} & The minumum value this function will return, will be mapped from {\ttfamily -\/1}\\
+\hline
+{\em value\+Neutral} & The neutral value this function will return, will be mapped from {\ttfamily 0}\\
+\hline
+{\em value\+Max} & The maximum value this function will return, will be mapped from {\ttfamily 1}\\
+\hline
+{\em n\+Value} & The normalised value to be projected, valid over range {\ttfamily \mbox{[}-\/1,1\mbox{]}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un-\/\+Normalised value
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_utility_ac4fb9440f1ffeba7e606f0bcd3d59cea}\label{class_fuzzy_logic_1_1_fuzzy_utility_ac4fb9440f1ffeba7e606f0bcd3d59cea}} 
+\index{FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}!ValidInstruction@{ValidInstruction}}
+\index{ValidInstruction@{ValidInstruction}!FuzzyLogic.FuzzyUtility@{FuzzyLogic.FuzzyUtility}}
+\doxysubsubsection{\texorpdfstring{ValidInstruction()}{ValidInstruction()}}
+{\footnotesize\ttfamily static bool Fuzzy\+Logic.\+Fuzzy\+Utility.\+Valid\+Instruction (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+If the fuzzy logic does not know what to do with an input (it has no rules relating to the provided argument) it will produce an invalid instruction, use this function to test for that 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value returned by \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_af648ad47e32dd23072546cf593f6cd08}{Fuzzy\+Logic.\+Fuzzy\+System.\+Evaluate\+Fuzzy\+Logic(\+Crisp\+Input)}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the {\itshape value}  is valid
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fuzzy AI project/\+Assets/\+Code/\+Fuzzy/\+System/\+Structures/\mbox{\hyperlink{_fuzzy_utility_8cs}{Fuzzy\+Utility.\+cs}}\end{DoxyCompactItemize}

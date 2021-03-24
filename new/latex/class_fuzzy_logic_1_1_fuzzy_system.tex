@@ -1,0 +1,235 @@
+\hypertarget{class_fuzzy_logic_1_1_fuzzy_system}{}\doxysection{Fuzzy\+Logic.\+Fuzzy\+System Class Reference}
+\label{class_fuzzy_logic_1_1_fuzzy_system}\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}
+
+
+Main interface to the fuzzy logic system. Responsible for taking \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Fuzzy\+Logic.\+Crisp\+Input}} and returning \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Fuzzy\+Logic.\+Crisp\+Output}}. Controls the \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzifier}{Fuzzy\+Logic.\+Fuzzifier}}, \mbox{\hyperlink{class_fuzzy_logic_1_1_inference_engine}{Fuzzy\+Logic.\+Inference\+Engine}}, and \mbox{\hyperlink{class_fuzzy_logic_1_1_defuzzifier}{Fuzzy\+Logic.\+Defuzzifier}}. Must be provided with \mbox{\hyperlink{class_fuzzy_logic_1_1_function_curve}{Fuzzy\+Logic.\+Function\+Curve}} and \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_rules_list}{Fuzzy\+Logic.\+Fuzzy\+Rules\+List}}  
+
+
+Inheritance diagram for Fuzzy\+Logic.\+Fuzzy\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_fuzzy_logic_1_1_fuzzy_system}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53d}{Defuzzification\+Method}} \{ \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53da8321e79c278ec510f63675c040594892}{Maximum}}
+, \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53da8ddd3ffdc4a5d36a6359a5e3e9345d40}{Center\+Of\+Mass}}
+ \}
+\begin{DoxyCompactList}\small\item\em The method by which defuzzification will take place. \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53da8321e79c278ec510f63675c040594892}{Fuzzy\+Logic.\+Fuzzy\+System.\+Defuzzification\+Method.\+Maximum}}\+: The largest (most sure) value is chosen \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53da8ddd3ffdc4a5d36a6359a5e3e9345d40}{Fuzzy\+Logic.\+Fuzzy\+System.\+Defuzzification\+Method.\+Center\+Of\+Mass}}\+: A weighted center-\/of-\/mass is calculated based on all inputs \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Crisp\+Output}} \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_af648ad47e32dd23072546cf593f6cd08}{Evaluate\+Fuzzy\+Logic}} (\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Crisp\+Input}} crisp\+Input)
+\begin{DoxyCompactList}\small\item\em Compute fuzzy logic on the {\itshape crisp\+Input} , using the current \mbox{\hyperlink{class_fuzzy_logic_1_1_function_curve}{Function\+Curve}} and \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_rules_list}{Fuzzy\+Rules\+List}}. Returns normalised values between {\ttfamily \mbox{[}-\/1,1\mbox{]}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Crisp\+Input}} \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a9ff2bb098b94f0cc40f4861c9a8a5210}{Build\+Input}} (float\mbox{[}$\,$\mbox{]} raw\+Inputs)
+\begin{DoxyCompactList}\small\item\em Builds a new \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Fuzzy\+Logic.\+Crisp\+Input}} based on povided normalised {\itshape raw\+Inputs}  within {\ttfamily \mbox{[}-\/1,1\mbox{]}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Crisp\+Input}} \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_ad2d9fdc0cc6cbc0f25d3129ba7a8d80a}{Build\+Input\+Normalised}} (float\mbox{[}$\,$\mbox{]} raw\+Inputs, float\mbox{[}$\,$\mbox{]} min\+Values, float\mbox{[}$\,$\mbox{]} max\+Values)
+\begin{DoxyCompactList}\small\item\em Builds a new \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Fuzzy\+Logic.\+Crisp\+Input}} based on povided {\itshape raw\+Inputs}  from a clamped scale where \mbox{[}{\itshape min\+Values} ,{\itshape max\+Values} \mbox{]} will be mapped to {\ttfamily \mbox{[}-\/1,1\mbox{]}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Crisp\+Input}} \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_abb6c4514062b2e8ef29063205473a359}{Build\+Input\+Normalised\+Uneven}} (float\mbox{[}$\,$\mbox{]} raw\+Inputs, float\mbox{[}$\,$\mbox{]} min\+Values, float\mbox{[}$\,$\mbox{]} neutral\+Values, float\mbox{[}$\,$\mbox{]} max\+Values)
+\begin{DoxyCompactList}\small\item\em Builds a new \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Fuzzy\+Logic.\+Crisp\+Input}} based on povided {\itshape raw\+Inputs}  from an uneven clamped scale where \mbox{[}{\itshape min\+Values} ,{\itshape max\+Values} \mbox{]} will be mapped to {\ttfamily \mbox{[}-\/1,1\mbox{]}}, and {\itshape neutral\+Values}  represents neutral values wich will be mapped to {\ttfamily 0} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Crisp\+Output}} \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_ab05bb353405d7d5665499735d5ec0fbf}{Un\+Normalise\+Output}} (\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Crisp\+Output}} crisp\+Output, float\mbox{[}$\,$\mbox{]} min\+Values, float\mbox{[}$\,$\mbox{]} max\+Values)
+\begin{DoxyCompactList}\small\item\em Returns a new \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Fuzzy\+Logic.\+Crisp\+Output}} that was generated from a call of \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_af648ad47e32dd23072546cf593f6cd08}{Fuzzy\+Logic.\+Fuzzy\+System.\+Evaluate\+Fuzzy\+Logic(\+Crisp\+Input)}} with a paramater generated by a call of \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_ad2d9fdc0cc6cbc0f25d3129ba7a8d80a}{Fuzzy\+Logic.\+Fuzzy\+System.\+Build\+Input\+Normalised(float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]})(float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]})}}. Maps each value that was normalised to {\ttfamily \mbox{[}-\/1,1\mbox{]}} to again be between the clamped range in \mbox{[}{\itshape min\+Values} ,{\itshape max\+Values} \mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Crisp\+Output}} \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a90d8c51562e67d088e09db91d4f6c760}{Un\+Normalise\+Output\+Uneven}} (\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Crisp\+Output}} crisp\+Output, float\mbox{[}$\,$\mbox{]} min\+Values, float\mbox{[}$\,$\mbox{]} neutral\+Values, float\mbox{[}$\,$\mbox{]} max\+Values)
+\begin{DoxyCompactList}\small\item\em Returns a new \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Fuzzy\+Logic.\+Crisp\+Output}} that was generated from a call of \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_af648ad47e32dd23072546cf593f6cd08}{Fuzzy\+Logic.\+Fuzzy\+System.\+Evaluate\+Fuzzy\+Logic(\+Crisp\+Input)}} with a paramater generated by a call of \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_abb6c4514062b2e8ef29063205473a359}{Fuzzy\+Logic.\+Fuzzy\+System.\+Build\+Input\+Normalised\+Uneven(float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]})}}. Maps each value that was normalised unevenly to {\ttfamily \mbox{[}-\/1,1\mbox{]}} to again be between the clamped range in {\ttfamily \mbox{[}}{\itshape min\+Values} {\ttfamily ,}{\itshape max\+Values} {\ttfamily \mbox{]}} where the values in {\itshape neutral\+Values}  represents a neutral state ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fuzzy_logic_1_1_function_curve}{Function\+Curve}} \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_aa6c127c354be355b132c3055d42a72c3}{Function\+Curve}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The input curve used to fuzzify data \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_rules_list}{Fuzzy\+Rules\+List}} \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a5b9c2dddca75fc4804b027a5b6ff8bb6}{Fuzzy\+Rules\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The rules which will be used to drive the inference engine \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53d}{Defuzzification\+Method}} \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a7847f4c48895e7656b83e31886213d4d}{Defuzzification\+Method\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The method by which defuzzification will take place. See \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53d}{Fuzzy\+Logic.\+Fuzzy\+System.\+Defuzzification\+Method}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main interface to the fuzzy logic system. Responsible for taking \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Fuzzy\+Logic.\+Crisp\+Input}} and returning \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Fuzzy\+Logic.\+Crisp\+Output}}. Controls the \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzifier}{Fuzzy\+Logic.\+Fuzzifier}}, \mbox{\hyperlink{class_fuzzy_logic_1_1_inference_engine}{Fuzzy\+Logic.\+Inference\+Engine}}, and \mbox{\hyperlink{class_fuzzy_logic_1_1_defuzzifier}{Fuzzy\+Logic.\+Defuzzifier}}. Must be provided with \mbox{\hyperlink{class_fuzzy_logic_1_1_function_curve}{Fuzzy\+Logic.\+Function\+Curve}} and \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_rules_list}{Fuzzy\+Logic.\+Fuzzy\+Rules\+List}} 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53d}\label{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53d}} 
+\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}!DefuzzificationMethod@{DefuzzificationMethod}}
+\index{DefuzzificationMethod@{DefuzzificationMethod}!FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}
+\doxysubsubsection{\texorpdfstring{DefuzzificationMethod}{DefuzzificationMethod}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53d}{Fuzzy\+Logic.\+Fuzzy\+System.\+Defuzzification\+Method}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The method by which defuzzification will take place. \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53da8321e79c278ec510f63675c040594892}{Fuzzy\+Logic.\+Fuzzy\+System.\+Defuzzification\+Method.\+Maximum}}\+: The largest (most sure) value is chosen \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53da8ddd3ffdc4a5d36a6359a5e3e9345d40}{Fuzzy\+Logic.\+Fuzzy\+System.\+Defuzzification\+Method.\+Center\+Of\+Mass}}\+: A weighted center-\/of-\/mass is calculated based on all inputs 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Maximum@{Maximum}!FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}!Maximum@{Maximum}}}\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53da8321e79c278ec510f63675c040594892}\label{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53da8321e79c278ec510f63675c040594892}} 
+Maximum&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CenterOfMass@{CenterOfMass}!FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}!CenterOfMass@{CenterOfMass}}}\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53da8ddd3ffdc4a5d36a6359a5e3e9345d40}\label{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53da8ddd3ffdc4a5d36a6359a5e3e9345d40}} 
+Center\+Of\+Mass&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_system_a9ff2bb098b94f0cc40f4861c9a8a5210}\label{class_fuzzy_logic_1_1_fuzzy_system_a9ff2bb098b94f0cc40f4861c9a8a5210}} 
+\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}!BuildInput@{BuildInput}}
+\index{BuildInput@{BuildInput}!FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}
+\doxysubsubsection{\texorpdfstring{BuildInput()}{BuildInput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Crisp\+Input}} Fuzzy\+Logic.\+Fuzzy\+System.\+Build\+Input (\begin{DoxyParamCaption}\item[{float\mbox{[}$\,$\mbox{]}}]{raw\+Inputs }\end{DoxyParamCaption})}
+
+
+
+Builds a new \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Fuzzy\+Logic.\+Crisp\+Input}} based on povided normalised {\itshape raw\+Inputs}  within {\ttfamily \mbox{[}-\/1,1\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Inputs} & A list of raw \char`\"{}crisp\char`\"{} float inputs, within {\ttfamily \mbox{[}-\/1,1\mbox{]}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Fuzzy\+Logic.\+Crisp\+Input}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_system_ad2d9fdc0cc6cbc0f25d3129ba7a8d80a}\label{class_fuzzy_logic_1_1_fuzzy_system_ad2d9fdc0cc6cbc0f25d3129ba7a8d80a}} 
+\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}!BuildInputNormalised@{BuildInputNormalised}}
+\index{BuildInputNormalised@{BuildInputNormalised}!FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}
+\doxysubsubsection{\texorpdfstring{BuildInputNormalised()}{BuildInputNormalised()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Crisp\+Input}} Fuzzy\+Logic.\+Fuzzy\+System.\+Build\+Input\+Normalised (\begin{DoxyParamCaption}\item[{float\mbox{[}$\,$\mbox{]}}]{raw\+Inputs,  }\item[{float\mbox{[}$\,$\mbox{]}}]{min\+Values,  }\item[{float\mbox{[}$\,$\mbox{]}}]{max\+Values }\end{DoxyParamCaption})}
+
+
+
+Builds a new \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Fuzzy\+Logic.\+Crisp\+Input}} based on povided {\itshape raw\+Inputs}  from a clamped scale where \mbox{[}{\itshape min\+Values} ,{\itshape max\+Values} \mbox{]} will be mapped to {\ttfamily \mbox{[}-\/1,1\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Inputs} & A list of raw \char`\"{}crisp\char`\"{} float inputs, within \mbox{[}{\itshape min\+Values} ,{\itshape max\+Values} \mbox{]}\\
+\hline
+{\em min\+Values} & A list of minimum values where {\itshape raw\+Inputs}  will be mapped to {\ttfamily -\/1}\\
+\hline
+{\em max\+Values} & A list of maximum values where {\itshape raw\+Inputs}  will be mapped to {\ttfamily 1}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new normalised \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Fuzzy\+Logic.\+Crisp\+Input}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_system_abb6c4514062b2e8ef29063205473a359}\label{class_fuzzy_logic_1_1_fuzzy_system_abb6c4514062b2e8ef29063205473a359}} 
+\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}!BuildInputNormalisedUneven@{BuildInputNormalisedUneven}}
+\index{BuildInputNormalisedUneven@{BuildInputNormalisedUneven}!FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}
+\doxysubsubsection{\texorpdfstring{BuildInputNormalisedUneven()}{BuildInputNormalisedUneven()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Crisp\+Input}} Fuzzy\+Logic.\+Fuzzy\+System.\+Build\+Input\+Normalised\+Uneven (\begin{DoxyParamCaption}\item[{float\mbox{[}$\,$\mbox{]}}]{raw\+Inputs,  }\item[{float\mbox{[}$\,$\mbox{]}}]{min\+Values,  }\item[{float\mbox{[}$\,$\mbox{]}}]{neutral\+Values,  }\item[{float\mbox{[}$\,$\mbox{]}}]{max\+Values }\end{DoxyParamCaption})}
+
+
+
+Builds a new \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Fuzzy\+Logic.\+Crisp\+Input}} based on povided {\itshape raw\+Inputs}  from an uneven clamped scale where \mbox{[}{\itshape min\+Values} ,{\itshape max\+Values} \mbox{]} will be mapped to {\ttfamily \mbox{[}-\/1,1\mbox{]}}, and {\itshape neutral\+Values}  represents neutral values wich will be mapped to {\ttfamily 0} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Inputs} & A list of raw \char`\"{}crisp\char`\"{} float inputs, within \mbox{[}{\itshape min\+Values} ,{\itshape max\+Values} \mbox{]}\\
+\hline
+{\em min\+Values} & A list of minimum values where {\itshape raw\+Inputs}  will be mapped to {\ttfamily -\/1}\\
+\hline
+{\em neutral\+Values} & A list of neutral values where {\itshape raw\+Inputs}  will be mapped to {\ttfamily 0}\\
+\hline
+{\em max\+Values} & A list of maximum values where {\itshape raw\+Inputs}  will be mapped to {\ttfamily 1}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new unevenly-\/normalised \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Fuzzy\+Logic.\+Crisp\+Input}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_system_af648ad47e32dd23072546cf593f6cd08}\label{class_fuzzy_logic_1_1_fuzzy_system_af648ad47e32dd23072546cf593f6cd08}} 
+\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}!EvaluateFuzzyLogic@{EvaluateFuzzyLogic}}
+\index{EvaluateFuzzyLogic@{EvaluateFuzzyLogic}!FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}
+\doxysubsubsection{\texorpdfstring{EvaluateFuzzyLogic()}{EvaluateFuzzyLogic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Crisp\+Output}} Fuzzy\+Logic.\+Fuzzy\+System.\+Evaluate\+Fuzzy\+Logic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_input}{Crisp\+Input}}}]{crisp\+Input }\end{DoxyParamCaption})}
+
+
+
+Compute fuzzy logic on the {\itshape crisp\+Input} , using the current \mbox{\hyperlink{class_fuzzy_logic_1_1_function_curve}{Function\+Curve}} and \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_rules_list}{Fuzzy\+Rules\+List}}. Returns normalised values between {\ttfamily \mbox{[}-\/1,1\mbox{]}} 
+
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_system_ab05bb353405d7d5665499735d5ec0fbf}\label{class_fuzzy_logic_1_1_fuzzy_system_ab05bb353405d7d5665499735d5ec0fbf}} 
+\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}!UnNormaliseOutput@{UnNormaliseOutput}}
+\index{UnNormaliseOutput@{UnNormaliseOutput}!FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}
+\doxysubsubsection{\texorpdfstring{UnNormaliseOutput()}{UnNormaliseOutput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Crisp\+Output}} Fuzzy\+Logic.\+Fuzzy\+System.\+Un\+Normalise\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Crisp\+Output}}}]{crisp\+Output,  }\item[{float\mbox{[}$\,$\mbox{]}}]{min\+Values,  }\item[{float\mbox{[}$\,$\mbox{]}}]{max\+Values }\end{DoxyParamCaption})}
+
+
+
+Returns a new \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Fuzzy\+Logic.\+Crisp\+Output}} that was generated from a call of \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_af648ad47e32dd23072546cf593f6cd08}{Fuzzy\+Logic.\+Fuzzy\+System.\+Evaluate\+Fuzzy\+Logic(\+Crisp\+Input)}} with a paramater generated by a call of \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_ad2d9fdc0cc6cbc0f25d3129ba7a8d80a}{Fuzzy\+Logic.\+Fuzzy\+System.\+Build\+Input\+Normalised(float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]})(float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]})}}. Maps each value that was normalised to {\ttfamily \mbox{[}-\/1,1\mbox{]}} to again be between the clamped range in \mbox{[}{\itshape min\+Values} ,{\itshape max\+Values} \mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em crisp\+Output} & The input data to be un-\/normalised\\
+\hline
+{\em min\+Values} & The minumum values this function will return, will be mapped from {\ttfamily -\/1}\\
+\hline
+{\em max\+Values} & The maximum values this function will return, will be mapped from {\ttfamily 1}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Fuzzy\+Logic.\+Crisp\+Output}} containing un-\/\+Normalised values
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_system_a90d8c51562e67d088e09db91d4f6c760}\label{class_fuzzy_logic_1_1_fuzzy_system_a90d8c51562e67d088e09db91d4f6c760}} 
+\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}!UnNormaliseOutputUneven@{UnNormaliseOutputUneven}}
+\index{UnNormaliseOutputUneven@{UnNormaliseOutputUneven}!FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}
+\doxysubsubsection{\texorpdfstring{UnNormaliseOutputUneven()}{UnNormaliseOutputUneven()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Crisp\+Output}} Fuzzy\+Logic.\+Fuzzy\+System.\+Un\+Normalise\+Output\+Uneven (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Crisp\+Output}}}]{crisp\+Output,  }\item[{float\mbox{[}$\,$\mbox{]}}]{min\+Values,  }\item[{float\mbox{[}$\,$\mbox{]}}]{neutral\+Values,  }\item[{float\mbox{[}$\,$\mbox{]}}]{max\+Values }\end{DoxyParamCaption})}
+
+
+
+Returns a new \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Fuzzy\+Logic.\+Crisp\+Output}} that was generated from a call of \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_af648ad47e32dd23072546cf593f6cd08}{Fuzzy\+Logic.\+Fuzzy\+System.\+Evaluate\+Fuzzy\+Logic(\+Crisp\+Input)}} with a paramater generated by a call of \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_abb6c4514062b2e8ef29063205473a359}{Fuzzy\+Logic.\+Fuzzy\+System.\+Build\+Input\+Normalised\+Uneven(float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]}, float\mbox{[}$\,$\mbox{]})}}. Maps each value that was normalised unevenly to {\ttfamily \mbox{[}-\/1,1\mbox{]}} to again be between the clamped range in {\ttfamily \mbox{[}}{\itshape min\+Values} {\ttfamily ,}{\itshape max\+Values} {\ttfamily \mbox{]}} where the values in {\itshape neutral\+Values}  represents a neutral state ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em crisp\+Output} & The input data to be un-\/normalised\\
+\hline
+{\em min\+Values} & The minumum values this function will return, will be mapped from {\ttfamily -\/1}\\
+\hline
+{\em neutral\+Values} & The neutral values this function will return, will be mapped from {\ttfamily 0}\\
+\hline
+{\em max\+Values} & The maximum values this function will return, will be mapped from {\ttfamily 1}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_fuzzy_logic_1_1_crisp_output}{Fuzzy\+Logic.\+Crisp\+Output}} containing un-\/\+Normalised values
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_system_a7847f4c48895e7656b83e31886213d4d}\label{class_fuzzy_logic_1_1_fuzzy_system_a7847f4c48895e7656b83e31886213d4d}} 
+\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}!DefuzzificationMethodMode@{DefuzzificationMethodMode}}
+\index{DefuzzificationMethodMode@{DefuzzificationMethodMode}!FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}
+\doxysubsubsection{\texorpdfstring{DefuzzificationMethodMode}{DefuzzificationMethodMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53d}{Defuzzification\+Method}} Fuzzy\+Logic.\+Fuzzy\+System.\+Defuzzification\+Method\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The method by which defuzzification will take place. See \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_system_a4d3652d5f4c60cc7e6032d786eaba53d}{Fuzzy\+Logic.\+Fuzzy\+System.\+Defuzzification\+Method}} 
+
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_system_aa6c127c354be355b132c3055d42a72c3}\label{class_fuzzy_logic_1_1_fuzzy_system_aa6c127c354be355b132c3055d42a72c3}} 
+\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}!FunctionCurve@{FunctionCurve}}
+\index{FunctionCurve@{FunctionCurve}!FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}
+\doxysubsubsection{\texorpdfstring{FunctionCurve}{FunctionCurve}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fuzzy_logic_1_1_function_curve}{Function\+Curve}} Fuzzy\+Logic.\+Fuzzy\+System.\+Function\+Curve\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The input curve used to fuzzify data 
+
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_system_a5b9c2dddca75fc4804b027a5b6ff8bb6}\label{class_fuzzy_logic_1_1_fuzzy_system_a5b9c2dddca75fc4804b027a5b6ff8bb6}} 
+\index{FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}!FuzzyRulesList@{FuzzyRulesList}}
+\index{FuzzyRulesList@{FuzzyRulesList}!FuzzyLogic.FuzzySystem@{FuzzyLogic.FuzzySystem}}
+\doxysubsubsection{\texorpdfstring{FuzzyRulesList}{FuzzyRulesList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_rules_list}{Fuzzy\+Rules\+List}} Fuzzy\+Logic.\+Fuzzy\+System.\+Fuzzy\+Rules\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The rules which will be used to drive the inference engine 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fuzzy AI project/\+Assets/\+Code/\+Fuzzy/\mbox{\hyperlink{_fuzzy_system_8cs}{Fuzzy\+System.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,139 @@
+\hypertarget{class_fuzzy_logic_1_1_fuzzy_number}{}\doxysection{Fuzzy\+Logic.\+Fuzzy\+Number Class Reference}
+\label{class_fuzzy_logic_1_1_fuzzy_number}\index{FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}}
+
+
+A fuzzy number  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}} \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number_a063e20dfac8beabdba911c0f3d55058c}{operator!}} (\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}} number)
+\begin{DoxyCompactList}\small\item\em Logical-\/\+Not operator, {\ttfamily 1 -\/ {\itshape number} } \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}} \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number_a2a36574140bbcf751ce0d6e7ae7535c0}{operator$\vert$}} (\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}} a, \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}} b)
+\begin{DoxyCompactList}\small\item\em Logical-\/\+Or operator, Unity\+Engine.\+Mathf.\+Max(float, float) of {\itshape a}  and {\itshape b}  \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}} \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number_a2a2958772e3b850955a95baef1bc042f}{operator\&}} (\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}} a, \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}} b)
+\begin{DoxyCompactList}\small\item\em Logical-\/\+And operator, Unity\+Engine.\+Mathf.\+Min(float, float) of {\itshape a}  and {\itshape b}  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number_a52eea05612e433faf36bbb5a158758ab}{Number\+Of\+Memberships}} = 5
+\begin{DoxyCompactList}\small\item\em Number of states a fuzzy number can be in \end{DoxyCompactList}\item 
+static readonly Dictionary$<$ \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82f}{Fuzzy\+Utility.\+Fuzzy\+States}}, float $>$ \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number_a1e347f7b0444da2a1633ea78ad3e86f1}{Normalised\+State\+Values}}
+\begin{DoxyCompactList}\small\item\em The satates that a fuzzy number can be in, and their normalised values \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number_ab67867dc74368aec116f3363fe0e39cb}{this\mbox{[}\+Fuzzy\+Utility.\+Fuzzy\+States state\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indexer to the membership-\/value of this number for each state \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number_a783537cc9a981c82f748a13f7a259616}{Sum}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The sum of the membership amounts \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A fuzzy number 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_number_a063e20dfac8beabdba911c0f3d55058c}\label{class_fuzzy_logic_1_1_fuzzy_number_a063e20dfac8beabdba911c0f3d55058c}} 
+\index{FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}}
+\doxysubsubsection{\texorpdfstring{operator"!()}{operator!()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}} Fuzzy\+Logic.\+Fuzzy\+Number.\+operator! (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}}}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logical-\/\+Not operator, {\ttfamily 1 -\/ {\itshape number} } 
+
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_number_a2a2958772e3b850955a95baef1bc042f}\label{class_fuzzy_logic_1_1_fuzzy_number_a2a2958772e3b850955a95baef1bc042f}} 
+\index{FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}}
+\doxysubsubsection{\texorpdfstring{operator\&()}{operator\&()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}} Fuzzy\+Logic.\+Fuzzy\+Number.\+operator\& (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}}}]{a,  }\item[{\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logical-\/\+And operator, Unity\+Engine.\+Mathf.\+Min(float, float) of {\itshape a}  and {\itshape b}  
+
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_number_a2a36574140bbcf751ce0d6e7ae7535c0}\label{class_fuzzy_logic_1_1_fuzzy_number_a2a36574140bbcf751ce0d6e7ae7535c0}} 
+\index{FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}!operator\texttt{"|}@{operator\texttt{"|}}}
+\index{operator\texttt{"|}@{operator\texttt{"|}}!FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}}
+\doxysubsubsection{\texorpdfstring{operator\texttt{"|}()}{operator|()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}} Fuzzy\+Logic.\+Fuzzy\+Number.\+operator$\vert$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}}}]{a,  }\item[{\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_number}{Fuzzy\+Number}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logical-\/\+Or operator, Unity\+Engine.\+Mathf.\+Max(float, float) of {\itshape a}  and {\itshape b}  
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_number_a1e347f7b0444da2a1633ea78ad3e86f1}\label{class_fuzzy_logic_1_1_fuzzy_number_a1e347f7b0444da2a1633ea78ad3e86f1}} 
+\index{FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}!NormalisedStateValues@{NormalisedStateValues}}
+\index{NormalisedStateValues@{NormalisedStateValues}!FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}}
+\doxysubsubsection{\texorpdfstring{NormalisedStateValues}{NormalisedStateValues}}
+{\footnotesize\ttfamily readonly Dictionary$<$\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82f}{Fuzzy\+Utility.\+Fuzzy\+States}}, float$>$ Fuzzy\+Logic.\+Fuzzy\+Number.\+Normalised\+State\+Values\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} Dictionary<FuzzyUtility.FuzzyStates, \textcolor{keywordtype}{float}>() }
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \{FuzzyUtility.FuzzyStates.LP,   1f \}}
+\DoxyCodeLine{            , \{FuzzyUtility.FuzzyStates.MP, 0.5f \}}
+\DoxyCodeLine{            , \{FuzzyUtility.FuzzyStates.Z,  0f \}}
+\DoxyCodeLine{            , \{FuzzyUtility.FuzzyStates.MN, -\/0.5f \}}
+\DoxyCodeLine{            , \{FuzzyUtility.FuzzyStates.LN, -\/1f \}}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+The satates that a fuzzy number can be in, and their normalised values 
+
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_number_a52eea05612e433faf36bbb5a158758ab}\label{class_fuzzy_logic_1_1_fuzzy_number_a52eea05612e433faf36bbb5a158758ab}} 
+\index{FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}!NumberOfMemberships@{NumberOfMemberships}}
+\index{NumberOfMemberships@{NumberOfMemberships}!FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}}
+\doxysubsubsection{\texorpdfstring{NumberOfMemberships}{NumberOfMemberships}}
+{\footnotesize\ttfamily const int Fuzzy\+Logic.\+Fuzzy\+Number.\+Number\+Of\+Memberships = 5\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Number of states a fuzzy number can be in 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_number_a783537cc9a981c82f748a13f7a259616}\label{class_fuzzy_logic_1_1_fuzzy_number_a783537cc9a981c82f748a13f7a259616}} 
+\index{FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}!Sum@{Sum}}
+\index{Sum@{Sum}!FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}}
+\doxysubsubsection{\texorpdfstring{Sum}{Sum}}
+{\footnotesize\ttfamily float Fuzzy\+Logic.\+Fuzzy\+Number.\+Sum\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The sum of the membership amounts 
+
+\mbox{\Hypertarget{class_fuzzy_logic_1_1_fuzzy_number_ab67867dc74368aec116f3363fe0e39cb}\label{class_fuzzy_logic_1_1_fuzzy_number_ab67867dc74368aec116f3363fe0e39cb}} 
+\index{FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}!this\mbox{[}FuzzyUtility.FuzzyStates state\mbox{]}@{this[FuzzyUtility.FuzzyStates state]}}
+\index{this\mbox{[}FuzzyUtility.FuzzyStates state\mbox{]}@{this[FuzzyUtility.FuzzyStates state]}!FuzzyLogic.FuzzyNumber@{FuzzyLogic.FuzzyNumber}}
+\doxysubsubsection{\texorpdfstring{this[FuzzyUtility.FuzzyStates state]}{this[FuzzyUtility.FuzzyStates state]}}
+{\footnotesize\ttfamily float Fuzzy\+Logic.\+Fuzzy\+Number.\+this\mbox{[}\mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82f}{Fuzzy\+Utility.\+Fuzzy\+States}} state\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indexer to the membership-\/value of this number for each state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & A \mbox{\hyperlink{class_fuzzy_logic_1_1_fuzzy_utility_a519db37576818bf934e3830e538fc82f}{Fuzzy\+Logic.\+Fuzzy\+Utility.\+Fuzzy\+States}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A float value representing membership
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fuzzy AI project/\+Assets/\+Code/\+Fuzzy/\+System/\+Structures/\mbox{\hyperlink{_fuzzy_number_8cs}{Fuzzy\+Number.\+cs}}\end{DoxyCompactItemize}
